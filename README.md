@@ -27,13 +27,17 @@ cd SerialTerminalApp
 mkdir build && cd build
 cmake ..
 cmake --build .
+```
 
 Or open the folder in Qt Creator, select your kit, and build.
 
 📦 Deployment
 Use the deploy.ps1 script to generate a self-contained folder with all required Qt DLLs:
 
+```bash
 .\deploy.ps1 -Zip
+```
+
 Output: SerialTerminal/ + SerialTerminal_vX.Y.Z_YYYYMMDD_HHMMSS.zip
 
 📁 Not in Repo
