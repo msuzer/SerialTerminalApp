@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>920</width>
+    <height>647</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,46 +49,182 @@
          </item>
          <item>
           <widget class="QComboBox" name="comboBaud">
-			<item><property name="text"><string>110</string></property></item>
-			<item><property name="text"><string>300</string></property></item>
-			<item><property name="text"><string>600</string></property></item>
-			<item><property name="text"><string>1200</string></property></item>
-			<item><property name="text"><string>2400</string></property></item>
-			<item><property name="text"><string>4800</string></property></item>
-			<item><property name="text"><string>9600</string></property></item>
-			<item><property name="text"><string>14400</string></property></item>
-			<item><property name="text"><string>19200</string></property></item>
-			<item><property name="text"><string>28800</string></property></item>
-			<item><property name="text"><string>38400</string></property></item>
-			<item><property name="text"><string>57600</string></property></item>
-			<item><property name="text"><string>115200</string></property></item>
-			<item><property name="text"><string>128000</string></property></item>
-			<item><property name="text"><string>230400</string></property></item>
-			<item><property name="text"><string>250000</string></property></item>
-			<item><property name="text"><string>256000</string></property></item>
-			<item><property name="text"><string>460800</string></property></item>
-			<item><property name="text"><string>500000</string></property></item>
-			<item><property name="text"><string>921600</string></property></item>
-			<item><property name="text"><string>Custom...</string></property></item>
+           <item>
+            <property name="text">
+             <string>110</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>300</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>600</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1200</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2400</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4800</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9600</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>14400</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>19200</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>28800</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>38400</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>57600</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>115200</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>128000</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>230400</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>250000</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>256000</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>460800</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>500000</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>921600</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Custom...</string>
+            </property>
+           </item>
           </widget>
          </item>
-		 <item>
-			 <widget class="QComboBox" name="comboFormat">
-			  <item><property name="text"><string>8N1</string></property></item>
-			  <item><property name="text"><string>8N2</string></property></item>
-			  <item><property name="text"><string>8E1</string></property></item>
-			  <item><property name="text"><string>8O1</string></property></item>
-			  <item><property name="text"><string>8M1</string></property></item>
-			  <item><property name="text"><string>8S1</string></property></item>
-			  <item><property name="text"><string>7E1</string></property></item>
-			  <item><property name="text"><string>7O1</string></property></item>
-			  <item><property name="text"><string>7E2</string></property></item>
-			  <item><property name="text"><string>7O2</string></property></item>
-			  <item><property name="text"><string>6N1</string></property></item>
-			  <item><property name="text"><string>5N1</string></property></item>
-			  <item><property name="text"><string>5N1.5</string></property></item>
-			 </widget>
-			</item>
+         <item>
+          <widget class="QComboBox" name="comboFormat">
+           <item>
+            <property name="text">
+             <string>8N1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8N2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8E1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8O1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8M1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8S1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7E1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7O1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7E2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7O2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6N1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5N1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>5N1.5</string>
+            </property>
+           </item>
+          </widget>
+         </item>
          <item>
           <widget class="QPushButton" name="btnConnect">
            <property name="text">
@@ -120,8 +256,11 @@
              <pointsize>10</pointsize>
             </font>
            </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+           </property>
            <property name="lineWrapMode">
-            <enum>QTextEdit::LineWrapMode::NoWrap</enum>
+            <enum>QTextEdit::LineWrapMode::WidgetWidth</enum>
            </property>
            <property name="readOnly">
             <bool>true</bool>
@@ -294,18 +433,46 @@
     </item>
    </layout>
   </widget>
-    <widget class="QStatusBar" name="statusbar">
+  <widget class="QStatusBar" name="statusbar">
    <widget class="QLabel" name="labelStatusLED">
-	<property name="minimumSize"><size><width>12</width><height>12</height></size></property>
-	<property name="maximumSize"><size><width>12</width><height>12</height></size></property>
-	<property name="styleSheet">
-	 <string notr="true">background-color: #888; border-radius: 6px;</string>
-	</property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>12</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>12</width>
+      <height>12</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>12</width>
+      <height>12</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #888; border-radius: 6px;</string>
+    </property>
    </widget>
    <widget class="QLabel" name="labelStatusText">
-	<property name="text"><string>Ready</string></property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ready</string>
+    </property>
    </widget>
-   </widget>
+  </widget>
  </widget>
  <resources/>
  <connections/>
