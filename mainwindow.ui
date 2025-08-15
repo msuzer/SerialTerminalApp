@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>920</width>
-    <height>647</height>
+    <width>1000</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -324,25 +324,18 @@
            </item>
           </widget>
          </item>
-         <item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="layoutControls">
+	    <item>
           <widget class="QCheckBox" name="checkTimestamp">
            <property name="text">
             <string>Timestamp</string>
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QCheckBox" name="checkDarkTheme">
-           <property name="text">
-            <string>Dark Mode</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="layoutControls">
         <item>
          <widget class="QCheckBox" name="checkPause">
           <property name="text">
@@ -350,13 +343,18 @@
           </property>
          </widget>
         </item>
+
         <item>
-         <widget class="QPushButton" name="btnClearLog">
+         <widget class="QCheckBox" name="checkAutoScroll">
           <property name="text">
-           <string>🧹 Clear Log</string>
+           <string>Auto-scroll</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
+
         <item>
          <spacer name="spacerControls">
           <property name="orientation">
@@ -373,13 +371,11 @@
           </property>
          </spacer>
         </item>
+
         <item>
-         <widget class="QCheckBox" name="checkAutoScroll">
+         <widget class="QPushButton" name="btnClearLog">
           <property name="text">
-           <string>Auto-scroll</string>
-          </property>
-          <property name="checked">
-           <bool>true</bool>
+           <string>🧹 Clear Log</string>
           </property>
          </widget>
         </item>
@@ -390,6 +386,13 @@
           </property>
          </widget>
         </item>
+		<item>
+          <widget class="QCheckBox" name="checkDarkTheme">
+           <property name="text">
+            <string>Dark Mode</string>
+           </property>
+          </widget>
+         </item>
        </layout>
       </item>
      </layout>
