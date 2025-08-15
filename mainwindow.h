@@ -35,6 +35,7 @@ private slots:
     void refreshPortList();
     void applyDarkTheme(bool enabled);
     void clearCommandHistory();
+    void sortHistoryAZ();
     void showHistoryContextMenu(const QPoint &pos);
 
 private:

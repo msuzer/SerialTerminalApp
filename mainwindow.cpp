@@ -54,6 +54,7 @@ void MainWindow::setupConnections() {
     connect(ui->lineInput, &QLineEdit::returnPressed, this, &MainWindow::handleSendClicked);
     connect(ui->btnSaveLog, &QPushButton::clicked, this, &MainWindow::saveLogToFile);
     connect(ui->btnClearLog, &QPushButton::clicked, [this]() { ui->textOutput->clear(); });
+    connect(ui->btnSortHistory, &QPushButton::clicked, this, &MainWindow::sortHistoryAZ);
     connect(ui->btnClearHistory, &QPushButton::clicked, this, &MainWindow::clearCommandHistory);
     connect(ui->checkDarkTheme, &QCheckBox::toggled, this, &MainWindow::applyDarkTheme);
     connect(ui->listHistory, &QListWidget::itemClicked, this, [this](QListWidgetItem *item) {
@@ -158,6 +159,9 @@ void MainWindow::saveSettings() {
     settings.setValue("darkTheme", ui->checkDarkTheme->isChecked());
     settings.setValue("fontSize", ui->textOutput->font().pointSize());
 
+    settings.setValue("mainWindowSize", size());   // save size
+    settings.setValue("mainWindowPos", pos());     // optional: save position
+
     saveCommandHistory();  // ✅
 }
 
@@ -174,7 +178,18 @@ void MainWindow::loadSettings() {
     QFont f("Courier", fontSize);
     ui->textOutput->setFont(f);
 
+    QVariant savedSize = settings.value("mainWindowSize");
+    if (savedSize.isValid()) {
+        resize(savedSize.toSize());
+    }
+
+    QVariant savedPos = settings.value("mainWindowPos");
+    if (savedPos.isValid()) {
+        move(savedPos.toPoint());
+    }
+
     loadCommandHistory();  // ✅
+    sortHistoryAZ();          // ensure A–Z on startup
 
     QString port = settings.value("port", "").toString();
     QString baud = settings.value("baud", "9600").toString();
@@ -288,6 +303,21 @@ void MainWindow::loadCommandHistory() {
 
 void MainWindow::saveCommandHistory() {
     settings.setValue("cmdHistory", commandHistory);
+}
+
+void MainWindow::sortHistoryAZ() {
+    // Sort the visible list (case-insensitive)
+    ui->listHistory->sortItems(Qt::AscendingOrder);
+
+    // Sync back to the in-memory list and save
+    QStringList items;
+    items.reserve(ui->listHistory->count());
+    for (int i = 0; i < ui->listHistory->count(); ++i) {
+        items << ui->listHistory->item(i)->text();
+    }
+    items.removeDuplicates();                // keep unique entries
+    commandHistory = items;                  // update your persistent list
+    saveCommandHistory();                    // if you have this helper
 }
 
 void MainWindow::applyDarkTheme(bool enabled) {

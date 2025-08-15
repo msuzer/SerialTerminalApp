@@ -421,6 +421,16 @@
        <item>
         <widget class="QListWidget" name="listHistory"/>
        </item>
+	   <item>
+		  <widget class="QPushButton" name="btnSortHistory">
+			<property name="text">
+			  <string>Sort A–Z</string>
+			</property>
+			<property name="toolTip">
+			  <string>Sort commands alphabetically (A–Z)</string>
+			</property>
+		  </widget>
+		</item>
        <item>
         <widget class="QPushButton" name="btnClearHistory">
          <property name="text">
